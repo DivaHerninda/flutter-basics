@@ -1,0 +1,80 @@
+1. Bagaimana cara membuat project Flutter menggunakan terminal/cmd?
+    Jawaban: Dengan menjalankan perintah "flutter create namaprojek" di terminal atau cmd
+
+2. Apa aturan dalam memberikan nama project pada Flutter?
+    Jawaban: Aturan yang harus diketahui adalah sebagai berikut:
+                - Nama tidak boleh kosong dan harus memiliki panjang minimal 1 karakter
+                - Tidak boleh mengandung spasi. 
+                - Gunakan tanda underscore "_" untuk membuat nama yang lebih dari satu karakter
+
+3. Apa saja folder yang secara khusus disiapkan oleh Flutter untuk menjalankan aplikasi pada platform tertentu?
+    Jawaban: Folder tersebut diantaranya, android, ios, linux, macos, web, dan windows
+
+4. Apa fungsi dari folder .dart_tools dan .idea?
+    Jawaban: - folder .dart_tools berisi konfigurasi dart package yang di generate oleh flutter,
+             - folder .idea berisi konfigurasi android studio, termasuk pengaturan editor, plugin, dan lainnya.
+
+5. Bagaimana cara membuka project Flutter menggunakan Visual Studio Code?
+    Jawaban: Buka Visual Studio Code, lalu pilih "Open Folder" dan pilih folder proyek Flutter yang ingin dibuka.
+    6. Mengapa kita perlu memastikan Android SDK terinstall untuk menjalankan aplikasi Flutter di sistem operasi Android?
+    Jawaban: karena Flutter membutuhkan akses ke alat pengembangan Android untuk membangun dan menjalankan 
+             aplikasi Flutter di perangkat Android.
+
+7. Apa langkah-langkah untuk mengatasi masalah "Android Toolchain error" pada perintah flutter doctor?
+    Jawaban: Buka CMD -> Masukkan perintah "flutter config --android-sdk <lokasi SDK Android>"
+
+8. Bagaimana cara menambahkan Android SDK Command-line tools melalui Android Studio?
+    Jawaban: - Unduh dan instal Android Studio, lalu melalui Android Studio SDK Manager, 
+             - pilih "Android SDK Command-line tools" untuk diinstal.
+
+9. Apa fungsi dari file .gitignore dalam struktur folder Flutter?
+    Jawaban: File ".gitignore" digunakan untuk menentukan file dan folder mana yang akan diabaikan 
+             oleh Git saat melakukan operasi version control.
+        
+10.Mengapa file pubspec.yaml sangat penting dalam pengembangan aplikasi Flutter?
+    Jawaban: File "pubspec.yaml" digunakan untuk mendefinisikan semua dependensi proyek Flutter 
+             dan juga untuk mengatur pengaturan proyek seperti nama, deskripsi, versi, dll.
+             11. Apa yang dimaksud dengan widget dalam konteks Flutter?
+    Jawaban: Widget adalah komponen utama yang digunakan untuk membuat antarmuka pengguna. 
+             Widget mencakup semua elemen visual yang ada dalam aplikasi Flutter, seperti tombol, 
+             teks, gambar, dan tata letak.
+
+12. Bagaimana pewarisan (inheritance) digunakan dalam pembuatan widget Flutter?
+    Jawaban: Untuk pewarisan class, Flutter menambahkan kata kunci extends sebelum kurung kurawal 
+             dan setelah nama class. Ini memberi tahu dart bahwa class ini akan mewarisi class lain, 
+             dan kita hanya dapat memperluas atau mewarisi satu class sekaligus.
+
+13. Apa peran widget MaterialApp dalam pembuatan aplikasi Flutter?
+    Jawaban: Widget MaterialApp adalah wrapper untuk aplikasi Flutter yang menawarkan fitur bawaan 
+             seperti navigasi, manajemen tema, dan lainnya. Selain itu, wrapper ini memperkenalkan 
+             widget seperti MaterialApp, Scaffold, dan lainnya yang membantu proses pembuatan aplikasi
+             yang konsisten secara visual.
+
+14. Mengapa kita membutuhkan fungsi runApp untuk menjalankan aplikasi Flutter?
+    Jawaban: runApp sendiri, fitur yang disediakan oleh Flutter, memungkinkan aplikasi flutter berjalan 
+             setelah booting aplikasi android atau ios. Pada akhirnya, dia akan mencoba mengambil widget 
+             tree yang kita buat dan menempatkannya ke layar yang didasarkan padanya.
+
+15. Apa kegunaan widget Scaffold dalam struktur aplikasi Flutter?
+    Jawaban: Untuk mendapatkan tampilan yang lebih indah, Widget Scaffold mempunyai beberapa argument, 
+             yang sering digunakan adalah argument appBar dan body.
+
+             16. Bagaimana cara menambahkan app bar dan body pada widget Scaffold?
+    Jawaban: Dengan menggunakan properti appBar dan menambahkan body menggunakan properti body pada widget Scaffold.
+
+17. Apa perbedaan antara Stateless Widget dan Stateful Widget?
+    Jawaban: Stateless Widget adalah widget yang tidak berubah sepanjang masa hidup aplikasi, sedangkan 
+             Stateful Widget adalah widget yang dapat mengubah tampilannya selama masa hidup aplikasi berjalan.
+
+18. Mengapa Stateful Widget disebut memiliki state internal?
+    Jawaban: Karena mereka memiliki objek State yang terkait dengannya, yang berisi data yang dapat berubah 
+             selama masa hidup widget.
+
+19. Berikan contoh penggunaan Stateless Widget dalam pembuatan aplikasi Flutter.
+    Jawaban: Contoh penggunaan Stateless Widget adalah widget Text, Image, dan Icon. Ini adalah widget yang 
+             tidak memerlukan perubahan state dan tampilannya tidak berubah selama masa hidup aplikasi.
+
+20. Berikan contoh penggunaan Stateful Widget dalam pembuatan aplikasi Flutter beserta alasan penggunaannya.
+    Jawaban: Contoh penggunaan Stateful Widget adalah widget TextField, Checkbox, dan RadioButton. 
+             Ini digunakan ketika Anda memerlukan widget yang dapat merespons perubahan input pengguna 
+             atau perubahan lain dalam aplikasi.
